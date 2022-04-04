@@ -23,7 +23,7 @@ steps:
 
 - task: TwineAuthenticate@1
   inputs:
-    artifactFeed: pyartifacts
+    artifactFeed: pymodule
 - script: |
-   twine upload -r "pyartifacts" --config-file $(PYPIRC_PATH) dist/*
+   twine upload -r "pymodule" --config-file $(PYPIRC_PATH) dist/*
     
